@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>globalvariable</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <script type="text/javascript">
+        var temp=200;
+        var temp1="this is an alert message";
+
+        function abc()
+        {
+            window.x="this is a variable";
+            document.write("<br>");
+            document.write(temp);
+            document.write("<br>");
+            document.write(window.x);
+            alert(window.temp1);
+
+
+        }
+        abc();
+        document.write(window.x);
+    </script>
+  </body>
+</html>
