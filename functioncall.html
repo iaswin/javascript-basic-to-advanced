@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>functioncall</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <img src="01-ink-in-water-time-remap-fade-out-1080p-OPTIMISED.mp4">
+    <script type="text/javascript">
+        document.write("<h1>FUNCTION CALL!</h1>")
+        var sum=new Function("num1","num2","return num1+num2");
+        document.write(sum(9,8));
+        document.write("<br>");
+        document.write(sum(9,6));
+        document.write("<br>");
+        document.write(sum(9,88));
+        
+
+        function abc(id,name){
+            this.id=id;
+            this.name=name;
+
+        }
+        function permanentemployee(id,name){
+            abc.call(this,id,name);
+
+        }
+        function temporaryemployee(id,name){
+            abc.call(this,id,name);
+
+        }
+        
+        document.write("<br>");
+        document.write("employee details");
+        document.write("<br>");
+
+        document.writeln( new permanentemployee(1,"Aswin").id);
+        document.write("<br>");
+
+        document.writeln( new permanentemployee(1,"Aswin").name);
+        document.write("<br>");
+
+        document.writeln( new temporaryemployee(2,"Achu").id);
+        document.write("<br>");
+
+        document.writeln( new permanentemployee(2,"Achu").name);
+
+    </script>
+  </body>
+</html>

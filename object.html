@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>object</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <script type="text/javascript">
+        var person={
+            firstName:"Aswin",
+            LastName:"A",
+            age:20
+        }
+        document.writeln(person.firstName+""+person.LastName+""+person.age);
+        //creating object using new object keyword
+        var emp=new Object();
+        emp.firstName="SHYAM";
+        emp.LastName="Praba";
+        emp.age=22;
+        for(value in emp)
+        {
+            document.writeln(emp[value]);
+        }
+        //creating an object using Object Constructor
+        function employee(firstName,LastName,age)
+        {
+            this.firstName=firstName;
+            this.LastName=LastName;
+            this.age=age;
+        }
+        var e=new employee("asha","a",20);
+        for(value in e)
+        {
+            document.writeln(e[value]);
+
+        }
+
+
+     
+
+
+    </script>
+  </body>
+</html>

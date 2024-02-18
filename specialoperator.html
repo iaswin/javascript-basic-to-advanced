@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>specialoperator</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <script type="text/javascript">
+        var x=true;
+        var y=false;
+         var z=x ? 2:4;
+         document.write(z);
+
+         let a=(1,2,3);
+         document.write("<br>")
+         document.write(a);
+         
+
+         var person={
+            firstName:"aswin",
+            lastname:"a",
+            agge:20
+         }
+         delete person.lastname;
+         document.write("detail of person:"+(person.firstName));
+         var h= agge in person ? true:false;
+         document.write(h);
+
+         var abc={
+
+         }
+
+         var k=new abc();
+         document.write("type of x is"+typeof(x));
+         
+
+
+    </script>
+  </body>
+</html>
