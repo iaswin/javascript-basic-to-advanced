@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>create</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <script type="text/javascript">
+        function fruit(){
+            this.name="Apple";
+            this.season="Winter";
+        }
+
+        fruit.prototype=Object.create(fruit.prototype);
+
+        const fru=new fruit();
+
+        console.log(fru.name,fru.season);
+
+    </script>
+  </body>
+</html>
