@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>freeze</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <script type="text/javascript">
+        var object1={
+            age:23
+        }
+        var object2=Object.freeze(object1);
+        object2.age=44;
+        
+        console.log(object2.age);
+    </script>
+  </body>
+</html>

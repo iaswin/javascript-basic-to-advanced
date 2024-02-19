@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>issealandseal</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <script type="text/javascript">
+        var object1={
+            age:20
+        }
+       var object2=Object.seal(object1);
+       object2.age=30;
+       delete object2.age;
+       console.log(object2.age);
+
+       console.log(Object.isSealed(object2));
+       console.log(Object.isSealed(object1));
+    </script>
+  </body>
+</html>
