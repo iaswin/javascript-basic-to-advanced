@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>arr2</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <script type="text/javascript">
+        //fill
+
+        var array1=["css","java","javascript"];
+
+        document.write(array1.fill("javascr",0));
+
+        document.write(array1.fill("java",1));
+
+
+        var are=Array.from("hello");
+        document.writeln("<br>");
+
+
+        document.write(are);
+
+
+        var num=[1,2,30,56,76,88];
+
+        function check(value)
+        {
+            if(value>30)
+            {
+                return value;
+            }
+        }
+        document.writeln("<br>");
+
+
+        document.write(num.filter(check));
+
+    </script>
+  </body>
+</html>
