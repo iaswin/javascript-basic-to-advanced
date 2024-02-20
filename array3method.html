@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>array3method</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <script type="text/javascript">
+
+        var num=[50,33,31,44,67];
+
+        var find=num.find(x=>x>30);
+        var find1=num.findIndex(x=>x>30);
+        document.writeln(find);
+        document.writeln("index is"+find1);
+        
+
+        var arree=num.includes(50);
+        document.write(arree);
+        var arq=num.indexOf(50);
+        document.writeln(arq);
+
+    var fore=num.forEach(function(value)
+    {
+        document.write( value+2);
+    })
+
+    var isarray=document.writeln(Array.isArray(num));
+
+    document.writeln(num.join(','));
+
+
+    </script>
+  </body>
+</html>
