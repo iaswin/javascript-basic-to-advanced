@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>array</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <script type="text/javascript">
+        var arr=["abc","def","ghi"];
+
+        for(values in arr)
+        {
+            document.writeln(arr[values]+"<br>");
+        }
+
+
+        //creating using new keyword
+
+
+        var arr1=new Array();
+        arr1[0]="Apple";
+        arr1[1]="orange";
+        
+        for(value in arr1)
+        {
+            document.writeln(arr1[value]);
+        }
+
+        //create array using constructor
+
+        var arr3=new Array("xuv","apple","grape");
+
+        for(value in arr1)
+        {
+            document.writeln(arr3[value]);
+        }
+
+    </script>
+  </body>
+</html>

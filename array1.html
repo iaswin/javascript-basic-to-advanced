@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>array1 methods</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <script type="text/javascript">
+        var array1=["c","c++","java"];
+        var array2=["html","javascript"];
+        var array3=[31,40,50];
+
+        function check(value)
+        {
+            if(value>30)
+            {
+                return value;
+            }
+        }
+        var concatinated=array1.concat(array2);
+
+        document.writeln(concatinated);
+
+        //copywithin
+       
+
+
+        document.write("<h3> copywithin</h3>");
+
+        var copywithin=array1.copyWithin(0,1,2);
+
+        document.writeln(copywithin);
+
+        document.write("<h3>enteries</h3>");
+
+        var entryarray=array2.entries();
+
+        for(value of entryarray)
+        {
+            document.writeln(value+"<br>");
+        }
+
+
+        //every
+
+
+
+        document.writeln("for-every value :::::"+array3.every(check));
+
+        var num=[1,2,[8,9],[10,18]];
+
+        var flattened=num.flat();
+        document.writeln("<br>")
+
+        document.writeln(flattened+"<br>");
+
+        var flatever=num.flatMap(x=>[x/2]);
+
+        document.writeln(flatever);
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
