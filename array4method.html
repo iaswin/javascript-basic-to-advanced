@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>array4method</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <script type="text/javascript">
+        document.writeln(Array.of(1,2,3,"hello"));
+        var num=[1,2,3];
+        num.push(4);
+        document.writeln(num);
+        document.writeln("after pop"+num.pop());
+
+        var aswin=num.reduce(function(accumulator,currentvalue)
+        {
+            return(accumulator+currentvalue);
+        })
+        document.writeln("the sum is"+aswin);
+        //some
+
+        var ww=num.some(x=>x>2);
+        document.writeln(ww);
+        var slicedarray=num.slice(2);
+        document.write(slicedarray);
+
+  </script></body>
+</html>
