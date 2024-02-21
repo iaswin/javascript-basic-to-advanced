@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>date  method</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+
+   
+    <script type="text/javascript">
+        var date=new Date();
+
+        //document.writeln(date);
+
+        var d=new Date(2018,12,20,12,56,6,50);
+        //document.writeln(d);
+        document.writeln(date.getDate());
+        document.writeln(date.getUTCFullYear());
+        document.writeln(date.getMonth());
+        document.writeln(date.toDateString());//print only date
+        document.writeln(date.toTimeString());//print only time
+
+
+    </script>
+  </body>
+</html>
