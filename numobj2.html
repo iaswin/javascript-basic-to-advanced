@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>numobj2</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <script type="text/javascript">
+        //isfinite()
+
+        var num1=1.000;
+        document.writeln(Number.isFinite(num1));
+        document.writeln(Number.isFinite(0,10));
+        document.writeln(Number.isFinite(10,0));
+        document.writeln(Number.isFinite("hello"));
+        document.writeln(Number.isFinite(-2.11));
+
+        //isinteger()
+        document.writeln(Number.isInteger("hello"));
+        //parsefloat & parse int
+
+        document.writeln(Number.parseFloat("hello"));
+        document.writeln(Number.parseInt(num1));
+
+        //toexponential
+
+        document.writeln(num1.toExponential(9));
+        //tofixed()::for fixing the decimal part
+
+        document.writeln(Math.PI.toFixed(2));
+        //toprecision::Format a number to a specified length:
+
+
+        document.writeln(Math.PI.toPrecision(1));
+
+
+    </script>
+  </body>
+</html>
