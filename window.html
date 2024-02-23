@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>window</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <input type="button" value="click me" onclick="message()">
+    <input type="button" value="click me1" onclick="message1()">
+    <input type="button" value="click me3" onclick="message3()">
+    <input type="button" value="click me3" onclick="message4()">
+    <input type="button" value="click me3" onclick="message5()">
+    <input type="button" value="click me6" onclick="message6()">
+    <script type="text/javascript">
+
+        function message()
+        {
+            alert("helo ");
+        }
+        
+        function message1()
+        {
+            var temp=confirm("Are you sure")
+            if(temp==true)
+            {
+                alert("hi");
+            }
+            else{
+                alert("falseeeee");
+            }
+        }
+        function message3()
+        {
+            var temp1=prompt("Age")
+            alert("the age of user is"+temp1);
+        }
+
+        function message4()
+        {
+            open("https://www.youtube.com/");
+        }
+
+        function message6()
+        {
+            close();
+               
+          
+        }
+
+        function message5()
+        {
+            setTimeout(function(){
+                alert("this is good")
+
+            },2000);
+               
+          
+        }
+
+
+
+
+        
+    </script>
+  </body>
+</html>
