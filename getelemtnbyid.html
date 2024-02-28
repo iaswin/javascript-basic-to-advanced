@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>getelemtnbyid</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <form>
+      Enter the telephone-number:  <input type="number" id="telephone-number">
+      <input type="button" value="click" onclick="show()">
+    </form>
+    <script type="text/javascript">
+
+        function show()
+        {
+            var value=document.getElementById('telephone-number').value;
+            alert("telephone number is"+value);
+        }
+
+
+
+    </script>
+  </body>
+</html>

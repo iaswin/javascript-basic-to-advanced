@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>getelementclass</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div class="abc">
+        this is 1st time
+    </div>
+    <div class="abc">
+        this is 2nd time
+    </div>
+    <div class="abc">
+        this is 3rd time
+    </div>
+    <script type="text/javascript">
+       var elements = document.getElementsByClassName('abc');
+
+       for (var i = 0; i < elements.length; i++) {
+          alert( elements[i].innerText);
+       }
+    </script>
+  </body>
+</html>

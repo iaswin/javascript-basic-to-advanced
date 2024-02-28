@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>getelementbyname</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <p>this is tag1</p>
+    <p>this is tag1</p>
+    <p>this is tag1</p>
+    <p>this is tag1</p>
+    <p>this is tag1</p>
+
+    <button type="button" value="click" onclick="count()">Click me</button>
+
+    <script type="text/javascript">
+        function count()
+        {
+            var paragraphs = document.getElementsByTagName("p");
+            alert("total tag"+paragraphs.length)
+
+        }
+      
+      
+      
+    </script>
+  </body>
+</html>
