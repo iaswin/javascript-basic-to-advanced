@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>validation</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <script type="text/javascript">
+        function validate()
+        {
+            var name=document.myform.name.value;
+            var pass=document.myform.password.value;
+            var confirmpass=document.myform.confirmpassword.value;
+            
+            if(name||pass=="")
+            {
+                alert("blank");
+                return false;
+            }
+            elseif(pass!=confirmpass&&pass.length<6)
+            {
+                alert("no match between password and confirm password");
+                return false;
+
+            }
+           
+           
+
+
+        }
+
+    </script>
+    <form name="myform" method="post" onsubmit="return validate()">
+       Name: <input type="text" name="name">
+      Password:  <input type="password" name="password">
+    confirm-  Password:  <input type="password" name="confirmpassword">
+      <input type="submit" value="click" >
+
+
+
+    </form>
+  </body>
+</html>
