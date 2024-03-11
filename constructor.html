@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>constructor</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <script type="text/javascript">
+
+        class CompanyName
+        {
+            constructor(){
+                this.CompanyName="LearnVern";
+                
+            }
+           
+        }
+
+        class Employee extends CompanyName
+        {
+            constructor(id,name)
+            {
+            super();
+            this.id=id;
+            this.name=name;
+
+            }
+        }
+
+            var abc=new Employee(100,"Aswin");
+
+            document.writeln(abc.id+" "+abc.name+" "+abc.CompanyName);
+
+            
+
+        
+    </script>
+  </body>
+</html>

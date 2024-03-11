@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>prototype</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <script type="text/javascript">
+
+        function employee(firstname,lastname){
+            this.firstname=firstname;
+            this.lastname=lastname;
+        }
+
+        employee.prototype.nationality="indian";
+
+        var abc=new employee("aswin","a");
+
+        document.writeln(abc.firstname+" "+abc.lastname+" "+abc.nationality);
+
+
+    </script>
+  </body>
+</html>
