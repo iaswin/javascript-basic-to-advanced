@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ENCAPSULATION</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <script type="text/javascript">
+        function Student(name, marks)
+        {
+            var Sname = name;
+            var Smarks = marks;
+
+            Object.defineProperties(this, {
+                "name": {
+                    get: function() {
+                        return Sname;
+                    },
+                    set: function(value) {
+                        Sname = value;
+                    }
+                },
+                "marks": {
+                    get: function() {
+                        return Smarks;
+                    },
+                    set: function(value) {
+                        Smarks = value;
+                    }
+                }
+            });
+        }
+
+        var student = new Student("Aswin", "20");
+
+        document.writeln(student.name);
+        document.writeln("<br>");
+        document.writeln(student.marks);
+
+    </script>
+  </body>
+</html>
